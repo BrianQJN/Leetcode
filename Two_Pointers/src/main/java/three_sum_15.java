@@ -24,7 +24,7 @@ public class three_sum_15 {
         // iterate through the array nums
         for (int i = 0; i < nums.length - 2; i++) {
             // if the num is new one
-            if (i == 0 || (i > 0 && nums[i] != nums[i-1])) {
+            if (i == 0 || (nums[i] != nums[i-1])) {
                 // initialize the two pointers and sum
                 int left = i + 1, right = nums.length - 1;
                 int sum = -nums[i];
