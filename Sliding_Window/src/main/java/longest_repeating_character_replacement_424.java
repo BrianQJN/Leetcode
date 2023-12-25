@@ -24,6 +24,8 @@ public class longest_repeating_character_replacement_424 {
             maxCount = Math.max(maxCount, ++count[s.charAt(end) - 'A']);
 
             // shrink the window while the k times operation can't achieve goal
+            // reason why don't update maxCount here is because we want the max length, and the decrease of maxCount would
+            // let the window shrink, so we just need to update the maxCount when the window is expanding
             while (end - start + 1 - maxCount > k) {
                 count[s.charAt(start) - 'A']--;
                 start++;
