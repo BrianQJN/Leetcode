@@ -8,7 +8,7 @@ import java.util.Map;
  * @since 2024-05-04
  */
 public class Detect_Squares_2013 {
-    private Map<Integer, Map<Integer, Integer>> countByX;
+    private final Map<Integer, Map<Integer, Integer>> countByX;
 
     /**
      * @implSpec You are given a stream of points on the X-Y plane. Design an algorithm that:
